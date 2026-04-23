@@ -571,7 +571,7 @@ img.kangndolightbox-image.active {
    align-items: center;
    flex-direction: column;
 }
-.btn-group.old {
+.btn-group.old, .btn-group.compatible {
    margin: 10px 0;
 }
 
@@ -614,7 +614,8 @@ img.kangndolightbox-image.active {
 }
 
 .btn-group .download-button.or, 
-.btn-group .download-button.old.or {
+.btn-group .download-button.old.or,
+.btn-group .download-button.compatible.or {
    border: none;
    background-color: transparent;
    background-image: -webkit-linear-gradient(top, #1e7bba00 0, #1e7bba00 0%);
@@ -623,7 +624,9 @@ img.kangndolightbox-image.active {
 .btn-group .download-button.or:hover,
 .btn-group .download-button.or:focus,
 .btn-group .download-button.old.or:hover,
-.btn-group .download-button.old.or:focus {
+.btn-group .download-button.old.or:focus,
+.btn-group .download-button.compatible.or:hover,
+.btn-group .download-button.compatible.or:focus  {
    background-color: #ba1e1e00;
 }
 
@@ -642,6 +645,21 @@ img.kangndolightbox-image.active {
    background-color: #ba1e1e;
 }
 
+.btn-group .download-button.compatible {
+   padding: 6px 12px;
+   border: 1px solid #1e7bba;
+   background-color: #1e7bba;
+   background-image: -webkit-linear-gradient(top, #1eba83 0, #0d6e49 100%);
+   background-image: -moz-linear-gradient(top, #9aba1e 0, #ba1e74 100%);
+   background-image: -ms-linear-gradient(top, #9aba1e 0, #ba1e74 100%);
+   background-image: -o-linear-gradient(top, #9aba1e 0, #ba1e74 100%);
+   background-image: linear-gradient(top, #9aba1e 0, #ba1e74 100%);
+}
+.btn-group .download-button.compatible:hover,
+.btn-group .download-button.compatible:focus {
+   background-color: #28a079;
+}
+
 .btn-group .download-button .download-text {
    font-size: 24px;
    padding-bottom: 0;
@@ -655,21 +673,32 @@ img.kangndolightbox-image.active {
    color: white;
 }
 
+.btn-group .download-button.old .download-text,
+.btn-group .download-button.compatible .download-text {
+   font-size: 20px;
+   line-height: 18px;
+}
+
 .btn-group .download-button.or .download-text.or,
-.btn-group .download-button.old.or .download-text.old.or {
+.btn-group .download-button.old.or .download-text.old.or,
+.btn-group .download-button.compatible.or .download-text.compatible.or {
    text-shadow: 0 0 black;
    color: #1e7bba;
    font-size: 22px;
 }
 
-.btn-group .download-button.old .download-text {
-   line-height: 18px;
-   font-size: 20px
+.btn-group .download-button.old.or .download-text.old.or,
+.btn-group .download-button.compatible.or .download-text.compatible.or {
+   font-size: 18px;
+   line-height: 20px;
 }
 
 .btn-group .download-button.old.or .download-text.old.or {
-   font-size: 18px;
-   line-height: 20px;
+   color: #a02828;
+}
+
+.btn-group .download-button.compatible.or .download-text.compatible.or {
+   color: #28a079;
 }
 
 .btn-group .download-button .caret {
@@ -710,7 +739,7 @@ img.kangndolightbox-image.active {
    margin-top: 4px;
 }
 
-.download-details.down-btn.old {
+.download-details.down-btn.old, .download-details.down-btn.compatible{
    font-size: 10.5px;
    margin-top: 6px;
 }
@@ -730,7 +759,7 @@ img.kangndolightbox-image.active {
    line-height: 1.45;
 }
 .auto-login-note {
-   margin-top: 2%;
+   margin-top: 1%;
 }
 
 
@@ -752,13 +781,15 @@ img.kangndolightbox-image.active {
       padding: 10px 14px;
    }
    .btn-group .download-button.or, 
-   .btn-group .download-button.old.or {
+   .btn-group .download-button.old.or,
+   .btn-group .download-button.compatible.or {
       padding: 16px 10px;
    }
    .btn-group .download-button .download-text {
       font-size: 28px;
    }
-   .btn-group .download-button.old .download-text {
+   .btn-group .download-button.old .download-text,
+   .btn-group .download-button.compatible .download-text {
       line-height: 20px;
       font-size: 22px
    }
